@@ -10,7 +10,7 @@ function randomNumber(min, max) {
 let num = 0
 
 // 1.2s interval so each question can be loaded
-const chute = setInterval(() => {
+let chute = setInterval(() => {
     // Selects a random RadioButton
     document.getElementsByClassName('form-check-input')[randomNumber(0,4)].click()
 
