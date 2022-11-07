@@ -1,5 +1,5 @@
 // Author: SynnK
-// Date: 16/08/2022
+// Date: 06/11/2022
 // Language: JavaScript
 
 // Function to make RNG steps easier
@@ -12,7 +12,7 @@ let num = 0
 // 1.2s interval so each question can be loaded
 let chute = setInterval(() => {
     // Selects a random RadioButton
-    document.getElementsByClassName('form-check-input')[randomNumber(0,4)].click()
+    document.getElementsByClassName('caed-radio-option')[randomNumber(0,document.getElementsByClassName("caed-radio-option").length)].click()
 
     // Iterate between 4 buttons
     for (let i = 0; i < 3; i++) {
